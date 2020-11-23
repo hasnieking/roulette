@@ -1,12 +1,15 @@
 //note this is a vulnerable program, never run it with more privileges
 #include <iostream>
 #include <string>
+#include "game.h"
+#include "playgame.h"
 
 enum class settings : char {
     play = '1',
     scientific = '2',
     quit = '3'
 };
+
 
 int main (int argc, char **argv) 
 {
@@ -27,6 +30,7 @@ int main (int argc, char **argv)
     switch (choice[0]) {
         case char(settings::play) :
             std::cerr << "Play" << std::endl;
+            playgame();
             break;
         case char(settings::scientific) :
             std::cerr << "Scientific" << std::endl;

@@ -1,15 +1,17 @@
 CXX = c++
 
-CXXFLAGS = -std=c++14 -Wall -Weffc++ -g
+CXXFLAGS = -std=c++14 -Wall -g
 
 FILENAME = roulette
 
 OBJECTS = \
 	main.o \
-	game.o
+	game.o \
+	playgame.o
 
 HEADERS = \
-	game.h 
+	game.h \
+	playgame.h
 
 
 all:    		$(FILENAME)
