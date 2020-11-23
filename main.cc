@@ -13,7 +13,8 @@ int main (int argc, char **argv)
     std::string choice;
     //main menu
     std::cout << "Welcome to roulette" << std::endl;
-    std::cout << "[1]Play\n[2]Scientific\n[3]Quit\n" << std::endl;
+    std::cout << '[' << char(settings::play) << "]Play\n[" << char(settings::scientific) << "]Scientific\n[" 
+        << char(settings::quit) << "]Quit\n" << std::endl;
 
     std::cout << "Make choice: ";
     std::getline(std::cin, choice);

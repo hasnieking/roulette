@@ -12,12 +12,12 @@ HEADERS = \
 	game.h 
 
 
-all:    	$(FILENAME)
+all:    		$(FILENAME)
 
 $(FILENAME):	$(OBJECTS)
 		$(CXX) $(CXXFLAGS) -o $@ $(OBJECTS)
 
-%.o:		%.cc $(HEADERS)
+%.o:			%.cc $(HEADERS)
 		$(CXX) $(CXXFLAGS) -c $<
 
 clean:
